@@ -16,7 +16,8 @@ public class BubbleSort_recusrsion_int {
                 arr[i + 1] = temp;
             }
         }
-        bubbleSort2(arr, length - 1);  //calling bubble sort for the whole array
+        bubbleSort2(arr, length - 1);
+        //calling bubble sort for the whole array
     }
 
     public static void main(String[] args) {
