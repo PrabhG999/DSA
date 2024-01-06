@@ -1,0 +1,9 @@
+Time complexity is - the measure of how the time of the algorithms increases with the size of the input data.
+
+o(1) - constant time
+o(log n) logrithimic time
+o(n) - linear time
+o(n log n ) - linearithic time
+o(n^2) - Quadratic time
+o(2^n) - exponential time
+o(n!) - Factorial time
