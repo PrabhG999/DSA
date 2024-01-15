@@ -23,6 +23,7 @@ public class Merge_sort_1 {
             merge_sort(array,left,mid);
             merge_sort(array,mid+1,right);
             merge(array,left,right,mid);
+
         }
     }
 
