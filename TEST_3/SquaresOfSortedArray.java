@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class SquaresOfSortedArray {
 
-
     public static void main(String[] args) {
         // Test cases for sortedSquares
         int[] nums1 = {-4, -1, 0, 3, 10};
