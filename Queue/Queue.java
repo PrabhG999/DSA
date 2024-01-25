@@ -38,12 +38,20 @@ public class Queue {
 
     // Method to check if the queue is empty
     boolean isEmpty() {
-        return size == 0;
+        return getSize() == 0;
     }
 
     // Method to check if the queue is full
     boolean isFull() {
-        return size == 5;
+        return getSize()== 5;
+    }
+    int peek(){
+        if(!isEmpty()){
+            return queue[front];
+        }else{
+            System.out.println("Queue is Empty");
+            return -1;
+        }
     }
 
     // Method to display the elements in the queue
@@ -53,5 +61,13 @@ public class Queue {
         }
         System.out.println();
     }
+    public static void main (String []args){
+        Queue q = new Queue();
 
+        q.enqueue(1);
+        q.enqueue(2);
+
+        q.peek();
+        q.show();
+    }
 }
