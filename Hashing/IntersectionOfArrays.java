@@ -13,20 +13,20 @@ public class IntersectionOfArrays {
 
     private static void printIntersectionSize(int[] array1, int[] array2) {
         //will make a set to add the element and the other one to count the intersections
-        Set<Integer> set1 = new HashSet<>();
-        Set<Integer> interSection = new HashSet<>();
+       HashSet<Integer> merged = new HashSet<>();
+       HashSet<Integer> intersection = new HashSet<>();
 
-        //add the elemets to set 1 from arra1
-        for(int i =0;i< array1.length;i++){
-            set1.add(array1[i]);
-        }
-        for(int num:array2){
-            if(set1.contains(num)){
-                interSection.add(num);
-            }
-        }
-        System.out.println(" The new Set"+ set1);
-        System.out.println("The Intersection set size "+ interSection.size());
-        System.out.println("The intersections in them"+ interSection);
+       for(int num:array1){
+           merged.add(num);
+       }
+       for(int num:array2){
+           if(merged.contains(num)){
+               intersection.add(num);
+           }
+       }
+        System.out.println(" New SET SiZE"+ merged.size());
+       System.out.println(" New SET SiZE"+ merged);
+        System.out.println(intersection);
+
     }
 }
