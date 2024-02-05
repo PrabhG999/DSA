@@ -31,7 +31,7 @@ public class ArrayReversalTest_Test {
         arr[right]=temp;
     }
 
-    private static String arrayToString(int[] arr) {
+    public static String arrayToString(int[] arr) {
         StringBuilder sb = new StringBuilder();
         sb.append("[");
         for (int i = 0; i < arr.length; i++) {
