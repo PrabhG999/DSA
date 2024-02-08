@@ -18,11 +18,13 @@ class Person1{  //copy constructor and plymorphism
         System.out.println("NAME IS - "+ name);
         System.out.println("Age IS - "+ age);
     }
-    public void display(String name){                       // method just to diplay name                                                                       // all there are part of polymorphism
+    public String display(String name){                       // method just to diplay name                                                                       // all there are part of polymorphism
         System.out.println("NAME IS - "+ name);
+        return name;
     }
-    public void display(int age){                           //method to diplay age
+    public int display(int age){                           //method to diplay age
         System.out.println("Age IS - "+ age);
+        return age;
     }
 }
 public class Person2Test {
