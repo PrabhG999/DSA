@@ -12,19 +12,13 @@ public class JumpGame {    //greedy
     }
 
     public static boolean canReachLastIndex(int[] nums) {
-        // Your implementation here
-        int length = nums.length, jump = 0;
-        //edge cases
-        if (nums == null || nums.length <= 0) {
-            return false;
+    int length = nums.length,jump=0;
+    for(int i=0;i<=jump;i++){
+        jump= Math.max(jump,i+nums[i]);
+        if(jump>=length){
+            return true;
         }
-        for (int i = 0; i <= jump; i++) {
-            jump = Math.max(jump, i + nums[i]);
-            if (jump >= length - 1) {
-                return true;
-            }
-        }
-        // Placeholder return value
-        return false;
+    }
+    return false;
     }
 }

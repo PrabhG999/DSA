@@ -1,0 +1,46 @@
+The Solid principal of OOPS
+S- Single Responsibility Principle
+O- Open & Close Principle
+L- Leskov's Substitution Principle
+I- Interface Segregation Principle
+D- Dependency Inversion Principle
+
+
+**S- Single Responsibility Principle**
+this function state sthat evert class should only hold single responsibility. Because we dont want to mashup the code for instance because of diffrent functions in one class  :-
+example - class BankService{
+diff methods ()
+method1() //atm
+method2()  //online account //to many responsibility
+method3() //loan
+mehtod () //savings
+}
+Solution
+class Loan {
+method3
+}
+like that above
+We know that these methods do diff functionalities so we need to put the methods in diff classes for diffferent functionalities to perform.
+------------------------------------------
+**O- Open & Close Principle**
+
+This pronciple states that according to new requirements the module should be open for extension but closed for modification
+
+example - This class is open for extension but will be closed for modifications
+package Solid_OOPS_Principles.SRP;
+
+public class notificationService {
+    void notification(String medium){
+
+    }
+    void transactional(String medium){
+
+    }
+}
+
+>>>>>>types of modifications is whatsapp notifications , telegram notifications etc etc
+---------------------------------------------------------------
+**L- Leskov's Substitution Principle**
+it applies to inhertance such a way that the derived classes must be completely a substitue for the base class .
+in other words if Class A is a subtype of Class B, then we should be able to replace B with A without interrupting the behavior of the program.
+
