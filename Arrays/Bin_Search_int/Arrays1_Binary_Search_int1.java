@@ -11,6 +11,7 @@ public class Arrays1_Binary_Search_int1 {
             int middle = (start +end)/2;
 
             if(sequence[middle]== secretNumber){
+
                 return middle;
             } else if (sequence[middle]<secretNumber) {
                 start = middle+1;
